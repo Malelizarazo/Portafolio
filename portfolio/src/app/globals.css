@@ -27,3 +27,20 @@ body {
 .glow-text {
   text-shadow: 0 0 10px var(--accent-glow);
 }
+
+/* 3D flip for certification cards */
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.rotate-y-0 {
+  transform: rotateY(0deg);
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.group:hover .backface-hidden {
+  transform: rotateY(180deg);
+}
+.group:hover .rotate-y-180 {
+  transform: rotateY(0deg);
+}
