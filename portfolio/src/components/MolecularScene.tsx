@@ -4,19 +4,19 @@ import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
 /**
- * MolecularScene — Three.js particle system resembling a protein/molecular structure.
+ * MolecularScene: Three.js particle system resembling a protein/molecular structure.
  *
  * Architecture:
- * - Spheres represent atoms (nodes)
- * - Lines connect nearby atoms as molecular bonds (edges)
- * - The entire structure slowly rotates to feel alive
+ * Spheres represent atoms (nodes)
+ * Lines connect nearby atoms as molecular bonds (edges)
+ * The entire structure slowly rotates to feel alive
  *
  * Future improvements:
- * - Add realistic protein backbone (alpha-helix, beta-sheet)
- * - Load PDB data for real protein structures
- * - Add mouse interaction (hover glow, click to inspect)
- * - Implement depth-of-field post-processing
- * - Add atom type coloring (C, N, O, S)
+ * Add realistic protein backbone (alpha helix, beta sheet)
+ * Load PDB data for real protein structures
+ * Add mouse interaction (hover glow, click to inspect)
+ * Implement depth of field post processing
+ * Add atom type coloring (C, N, O, S)
  */
 
 const ATOM_COUNT = 120;
@@ -37,7 +37,7 @@ export default function MolecularScene() {
 
     const container = containerRef.current;
 
-    // --- Scene setup ---
+    // Scene setup
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
       60,
@@ -55,7 +55,7 @@ export default function MolecularScene() {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     container.appendChild(renderer.domElement);
 
-    // --- Lighting ---
+    // Lighting
     const ambientLight = new THREE.AmbientLight(0x334466, 0.6);
     scene.add(ambientLight);
 
@@ -67,7 +67,7 @@ export default function MolecularScene() {
     pointLight2.position.set(-5, -3, 8);
     scene.add(pointLight2);
 
-    // --- Create atoms ---
+    // Create atoms
     const atomGeometry = new THREE.SphereGeometry(0.12, 16, 16);
     const atomMaterials = [
       new THREE.MeshStandardMaterial({
@@ -130,7 +130,7 @@ export default function MolecularScene() {
       });
     }
 
-    // --- Create bonds (lines between nearby atoms) ---
+    // Create bonds (lines between nearby atoms)
     const bondMaterial = new THREE.LineBasicMaterial({
       color: 0x3b82f6,
       transparent: true,
@@ -171,7 +171,7 @@ export default function MolecularScene() {
 
     updateBonds();
 
-    // --- Animation loop ---
+    // Animation loop
     let frameCount = 0;
     let animationId: number;
 
@@ -205,7 +205,7 @@ export default function MolecularScene() {
 
     animate();
 
-    // --- Handle resize ---
+    // Handle resize
     function handleResize() {
       if (!container) return;
       camera.aspect = container.clientWidth / container.clientHeight;
@@ -215,7 +215,7 @@ export default function MolecularScene() {
 
     window.addEventListener("resize", handleResize);
 
-    // --- Cleanup ---
+    // Cleanup
     return () => {
       cancelAnimationFrame(animationId);
       window.removeEventListener("resize", handleResize);

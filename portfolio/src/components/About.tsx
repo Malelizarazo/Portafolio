@@ -14,9 +14,9 @@ export default function About() {
           </p>
           <p>
             My work bridges the gap between scientific computing and scalable
-            cloud architectures — from predicting protein thermal stability to
+            cloud architectures, from predicting protein thermal stability to
             designing resilient AWS systems. I&apos;m passionate about using
-            technology to solve complex, real-world problems.
+            technology to solve complex, real world problems.
           </p>
         </div>
       </div>

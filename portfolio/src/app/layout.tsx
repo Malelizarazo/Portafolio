@@ -5,9 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Malelizarazo | Portfolio",
+  title: "Maria Alejandra Lizarazo | Portfolio",
   description:
-    "Cloud Engineer | Machine Learning | Computational Science Portfolio",
+    "Cloud Engineer · Machine Learning · Computational Science Portfolio",
 };
 
 export default function RootLayout({

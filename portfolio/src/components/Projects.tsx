@@ -16,7 +16,7 @@ const projects = [
   {
     title: "Cloud / ML Research Project",
     description:
-      "Upcoming project exploring the intersection of cloud-native architectures and machine learning pipelines at scale.",
+      "Upcoming project exploring the intersection of cloud native architectures and machine learning pipelines at scale.",
     tags: ["Cloud", "ML", "Research"],
     status: "In Progress",
   },

@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a0e1a]/80 backdrop-blur-md border-b border-slate-800">
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
         <a href="#hero" className="text-lg font-semibold text-blue-400">
-          M.
+          MAL.
         </a>
 
         {/* Desktop */}

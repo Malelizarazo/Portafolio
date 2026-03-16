@@ -18,7 +18,7 @@ export default function Hero() {
       {/* Content overlay */}
       <div className="relative z-10 text-center px-4">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4 glow-text">
-          Malelizarazo
+          Maria Alejandra Lizarazo
         </h1>
         <p className="text-lg md:text-xl text-slate-400 mb-8 tracking-wide">
           Cloud Engineer · Machine Learning · Computational Science
