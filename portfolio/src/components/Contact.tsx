@@ -34,7 +34,7 @@ export default function Contact() {
       </div>
 
       <div className="mt-16 text-center text-xs text-slate-600">
-        © {new Date().getFullYear()} María Alejandra Lizarazo. Built with
+        © {new Date().getFullYear()} Maria Alejandra Lizarazo. Built with
         Next.js, Three.js & Tailwind CSS.
       </div>
     </section>

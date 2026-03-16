@@ -16,7 +16,7 @@ export default function Hero() {
 
       <div className="relative z-10 text-center px-4">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4 glow-text">
-          María Alejandra Lizarazo
+          Maria Alejandra Lizarazo
         </h1>
         <p className="text-lg md:text-xl text-slate-400 mb-2 tracking-wide">
           Chemical & Systems Engineer
