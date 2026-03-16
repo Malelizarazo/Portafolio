@@ -7,33 +7,33 @@ export default function About() {
         </h2>
         <div className="text-slate-400 leading-relaxed space-y-4 text-center max-w-2xl mx-auto">
           <p>
-            Engineering student at Universidad de los Andes pursuing a dual
-            degree in Chemical and Systems Engineering. I have experience in
-            data analysis, software development, and Machine Learning applied
-            to bioinformatics.
+            Engineer with a strong background in data analysis, cloud
+            technologies and software development, currently interning at AWS.
+            Passionate about bridging business strategy, marketing operations
+            and data science.
           </p>
           <p>
-            I&apos;m passionate about the intersection between biotechnology
-            and computational technology, from predicting protein thermal
-            stability to building cloud architectures and automating data
-            pipelines.
+            Experienced in predictive modeling, analytics dashboards, and
+            automating decision making processes across technical and
+            non-technical teams.
           </p>
         </div>
 
-        {/* Education */}
         <div className="mt-12 max-w-2xl mx-auto">
           <h3 className="text-sm font-mono text-cyan-400 mb-4 uppercase tracking-wider text-center">
             Education
           </h3>
-          <div className="text-center">
+          <div className="text-center space-y-2">
             <p className="text-white font-semibold">Universidad de los Andes</p>
             <p className="text-slate-500 text-sm">
-              Dual degree in Chemical and Systems Engineering · 2020 · Present
+              B.S. Systems and Computer Engineering · 2025
+            </p>
+            <p className="text-slate-500 text-sm">
+              B.S. Chemical Engineering · 2025
             </p>
           </div>
         </div>
 
-        {/* Languages */}
         <div className="mt-10 max-w-2xl mx-auto">
           <h3 className="text-sm font-mono text-cyan-400 mb-4 uppercase tracking-wider text-center">
             Languages
