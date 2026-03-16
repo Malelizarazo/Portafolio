@@ -1,16 +1,23 @@
 const projects = [
   {
-    title: "Protein Thermal Stability Prediction",
+    title: "AWS Marketing & Campaign Analytics",
     description:
-      "Thesis project predicting protein thermal stability from amino acid sequences using Azure ML, Python, and predictive models like PCA and clustering.",
-    tags: ["ML", "Bioinformatics", "Azure ML", "Python"],
-    status: "In Progress",
+      "Interactive campaign landing pages, KPI tracking dashboards, and team performance analytics for 200+ sales professionals across LATAM. Built with HTML, CSS, JS, and QuickSight.",
+    tags: ["AWS", "QuickSight", "JavaScript", "Analytics"],
+    status: "Current",
   },
   {
-    title: "AWS Gym Mini Architecture",
+    title: "Amazon Q CLI Agents",
     description:
-      "Lightweight cloud architecture playground for experimenting with AWS services, infrastructure as code, and serverless patterns.",
-    tags: ["AWS", "IaC", "Serverless"],
+      "Custom agents for email automation and content generation, including web scraping capabilities for public event data collection and processing.",
+    tags: ["Amazon Q", "Automation", "Python"],
+    status: "Current",
+  },
+  {
+    title: "Protein Thermal Stability Prediction",
+    description:
+      "Thesis project predicting protein thermal stability from amino acid sequences using ML models, Python, Azure ML, and large scale embeddings.",
+    tags: ["ML", "Bioinformatics", "Azure ML", "Python"],
     status: "Completed",
   },
   {
@@ -18,13 +25,6 @@ const projects = [
     description:
       "Data models and dashboards in Power BI with BigQuery integration. Automated reports and weighted average calculations across large datasets.",
     tags: ["Power BI", "BigQuery", "Data Analysis"],
-    status: "Completed",
-  },
-  {
-    title: "Petroleum Refining Data Analysis",
-    description:
-      "Analysis of operational variables in SCADA systems and product quality testing for petroleum refining processes.",
-    tags: ["Data Analysis", "SCADA", "Chemical Eng."],
     status: "Completed",
   },
 ];

@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "María Alejandra Lizarazo | Portfolio",
   description:
-    "Chemical & Systems Engineering · Machine Learning · Cloud Computing",
+    "Chemical & Systems Engineer · AWS · Machine Learning · Data Analytics",
 };
 
 export default function RootLayout({

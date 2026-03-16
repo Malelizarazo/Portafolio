@@ -1,7 +1,7 @@
 const skillGroups = [
   {
     category: "Programming",
-    skills: ["Python", "Java", "JavaScript", "TypeScript", "HTML", "SQL"],
+    skills: ["Python", "Java", "JavaScript", "HTML", "SQL", "React", "Dart"],
   },
   {
     category: "Data & ML",
@@ -12,15 +12,17 @@ const skillGroups = [
       "PCA",
       "Clustering",
       "Predictive Modeling",
+      "Power BI",
+      "QuickSight",
     ],
   },
   {
     category: "Cloud & DevOps",
-    skills: ["Azure ML", "Google Cloud", "AWS", "Docker", "Power Automate"],
+    skills: ["AWS", "Azure ML", "Google Cloud", "Docker", "BigQuery"],
   },
   {
-    category: "Data Tools",
-    skills: ["Power BI", "BigQuery", "Jupyter", "Git"],
+    category: "Tools & Automation",
+    skills: ["Salesforce", "Power Automate", "Git", "Jupyter", "Flutter"],
   },
 ];
 
