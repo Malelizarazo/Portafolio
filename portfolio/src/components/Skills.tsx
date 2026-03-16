@@ -1,38 +1,26 @@
 const skillGroups = [
   {
-    category: "Cloud & Infrastructure",
-    skills: ["AWS", "Terraform", "Docker", "Kubernetes", "Serverless", "CI/CD"],
+    category: "Programming",
+    skills: ["Python", "Java", "JavaScript", "TypeScript", "HTML", "SQL"],
   },
   {
-    category: "Machine Learning",
+    category: "Data & ML",
     skills: [
-      "Python",
-      "scikit-learn",
-      "TensorFlow",
       "Pandas",
       "NumPy",
-      "Jupyter",
+      "Scikit-learn",
+      "PCA",
+      "Clustering",
+      "Predictive Modeling",
     ],
   },
   {
-    category: "Engineering",
-    skills: [
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Node.js",
-      "SQL",
-      "Git",
-    ],
+    category: "Cloud & DevOps",
+    skills: ["Azure ML", "Google Cloud", "AWS", "Docker", "Power Automate"],
   },
   {
-    category: "Science",
-    skills: [
-      "Bioinformatics",
-      "Computational Chemistry",
-      "Data Analysis",
-      "Statistical Modeling",
-    ],
+    category: "Data Tools",
+    skills: ["Power BI", "BigQuery", "Jupyter", "Git"],
   },
 ];
 

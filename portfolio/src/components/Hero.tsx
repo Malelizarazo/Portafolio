@@ -2,7 +2,6 @@
 
 import dynamic from "next/dynamic";
 
-// Dynamic import to avoid SSR issues with Three.js
 const MolecularScene = dynamic(() => import("./MolecularScene"), {
   ssr: false,
 });
@@ -15,13 +14,15 @@ export default function Hero() {
     >
       <MolecularScene />
 
-      {/* Content overlay */}
       <div className="relative z-10 text-center px-4">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4 glow-text">
-          Maria Alejandra Lizarazo
+          María Alejandra Lizarazo
         </h1>
-        <p className="text-lg md:text-xl text-slate-400 mb-8 tracking-wide">
-          Cloud Engineer · Machine Learning · Computational Science
+        <p className="text-lg md:text-xl text-slate-400 mb-2 tracking-wide">
+          Chemical & Systems Engineering
+        </p>
+        <p className="text-md text-slate-500 mb-8">
+          Machine Learning · Cloud Computing · Bioinformatics
         </p>
         <div className="flex gap-4 justify-center">
           <a
@@ -39,7 +40,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Gradient fade at bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0a0e1a] to-transparent z-10" />
     </section>
   );

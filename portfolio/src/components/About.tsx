@@ -7,17 +7,42 @@ export default function About() {
         </h2>
         <div className="text-slate-400 leading-relaxed space-y-4 text-center max-w-2xl mx-auto">
           <p>
-            Engineer with a multidisciplinary background spanning Systems
-            Engineering, Chemical Engineering, Cloud Computing, and Machine
-            Learning. I thrive at the intersection of computational science and
-            modern cloud infrastructure.
+            Engineering student at Universidad de los Andes pursuing a dual
+            degree in Chemical and Systems Engineering. I have experience in
+            data analysis, software development, and Machine Learning applied
+            to bioinformatics.
           </p>
           <p>
-            My work bridges the gap between scientific computing and scalable
-            cloud architectures, from predicting protein thermal stability to
-            designing resilient AWS systems. I&apos;m passionate about using
-            technology to solve complex, real world problems.
+            I&apos;m passionate about the intersection between biotechnology
+            and computational technology, from predicting protein thermal
+            stability to building cloud architectures and automating data
+            pipelines.
           </p>
+        </div>
+
+        {/* Education */}
+        <div className="mt-12 max-w-2xl mx-auto">
+          <h3 className="text-sm font-mono text-cyan-400 mb-4 uppercase tracking-wider text-center">
+            Education
+          </h3>
+          <div className="text-center">
+            <p className="text-white font-semibold">Universidad de los Andes</p>
+            <p className="text-slate-500 text-sm">
+              Dual degree in Chemical and Systems Engineering · 2020 · Present
+            </p>
+          </div>
+        </div>
+
+        {/* Languages */}
+        <div className="mt-10 max-w-2xl mx-auto">
+          <h3 className="text-sm font-mono text-cyan-400 mb-4 uppercase tracking-wider text-center">
+            Languages
+          </h3>
+          <div className="flex justify-center gap-6 text-sm text-slate-400">
+            <span>Spanish · Native</span>
+            <span>English · C1</span>
+            <span>French · B1</span>
+          </div>
         </div>
       </div>
     </section>

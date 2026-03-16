@@ -2,9 +2,9 @@ const projects = [
   {
     title: "Protein Thermal Stability Prediction",
     description:
-      "Machine learning model to predict protein thermostability using sequence and structural features. Built with Python, scikit-learn, and bioinformatics tools.",
-    tags: ["ML", "Bioinformatics", "Python"],
-    status: "Completed",
+      "Thesis project predicting protein thermal stability from amino acid sequences using Azure ML, Python, and predictive models like PCA and clustering.",
+    tags: ["ML", "Bioinformatics", "Azure ML", "Python"],
+    status: "In Progress",
   },
   {
     title: "AWS Gym Mini Architecture",
@@ -14,11 +14,18 @@ const projects = [
     status: "Completed",
   },
   {
-    title: "Cloud / ML Research Project",
+    title: "Power BI Data Analytics",
     description:
-      "Upcoming project exploring the intersection of cloud native architectures and machine learning pipelines at scale.",
-    tags: ["Cloud", "ML", "Research"],
-    status: "In Progress",
+      "Data models and dashboards in Power BI with BigQuery integration. Automated reports and weighted average calculations across large datasets.",
+    tags: ["Power BI", "BigQuery", "Data Analysis"],
+    status: "Completed",
+  },
+  {
+    title: "Petroleum Refining Data Analysis",
+    description:
+      "Analysis of operational variables in SCADA systems and product quality testing for petroleum refining processes.",
+    tags: ["Data Analysis", "SCADA", "Chemical Eng."],
+    status: "Completed",
   },
 ];
 
@@ -29,7 +36,7 @@ export default function Projects() {
         <h2 className="text-3xl font-bold mb-12 text-center glow-text">
           Featured Projects
         </h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {projects.map((p) => (
             <div
               key={p.title}
