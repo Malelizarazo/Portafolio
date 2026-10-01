@@ -8,7 +8,7 @@ export default function Contact() {
           Interested in collaborating or have a question? Feel free to reach out.
         </p>
         <a
-          href="mailto:malelizarazo@gmail.com"
+          href="mailto:marializarazopiqueras@gmail.com"
           className="inline-block px-8 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 transition-colors text-white font-medium glow"
         >
           Send Email
