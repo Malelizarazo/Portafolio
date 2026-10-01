@@ -19,10 +19,10 @@ export default function Hero() {
           Maria Alejandra Lizarazo
         </h1>
         <p className="text-lg md:text-xl text-slate-400 mb-2 tracking-wide">
-          Chemical & Systems Engineer
+          Software Engineer · AI Agents · ML for Science
         </p>
         <p className="text-md text-slate-500 mb-8">
-          AWS · Machine Learning · Data Analytics · Bioinformatics
+          Junior Cloud Support Engineer at Amadeus · Former AWS Intern
         </p>
         <div className="flex gap-4 justify-center">
           <a

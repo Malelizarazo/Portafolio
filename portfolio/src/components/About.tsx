@@ -7,15 +7,17 @@ export default function About() {
         </h2>
         <div className="text-slate-400 leading-relaxed space-y-4 text-center max-w-2xl mx-auto">
           <p>
-            Engineer with a strong background in data analysis, cloud
-            technologies and software development, currently interning at AWS.
-            Passionate about bridging business strategy, marketing operations
-            and data science.
+            Software engineer with two degrees from Universidad de los Andes:
+            Systems and Computer Engineering, and Chemical Engineering. I work
+            on AI agents, software engineering and machine learning for
+            science.
           </p>
           <p>
-            Experienced in predictive modeling, analytics dashboards, and
-            automating decision making processes across technical and
-            non-technical teams.
+            I am a Junior Cloud Support Engineer at Amadeus, supporting 24/7
+            production platforms on Linux and Kubernetes/OpenShift with
+            Grafana and Prometheus. Before that, as an intern at Amazon Web
+            Services, I built web applications used by 200+ people and a
+            multi-agent generative AI prototype on Amazon Bedrock.
           </p>
         </div>
 

@@ -1,6 +1,6 @@
 "use client";
 
-function CloudPractitionerBadge() {
+function CloudPractitionerBadge({ label }: { label: string }) {
   return (
     <svg viewBox="0 0 120 120" className="w-24 h-24" aria-hidden="true">
       <defs>
@@ -17,13 +17,13 @@ function CloudPractitionerBadge() {
         opacity="0.9"
       />
       <text x="60" y="90" textAnchor="middle" fill="#2D9CDB" fontSize="7" fontFamily="monospace">
-        FOUNDATIONAL
+        {label}
       </text>
     </svg>
   );
 }
 
-function SolutionsArchitectBadge() {
+function SolutionsArchitectBadge({ label }: { label: string }) {
   return (
     <svg viewBox="0 0 120 120" className="w-24 h-24" aria-hidden="true">
       <defs>
@@ -38,13 +38,13 @@ function SolutionsArchitectBadge() {
       <path d="M60 42L77 70H43L60 42z" fill="url(#saGrad)" opacity="0.3" />
       <circle cx="60" cy="58" r="6" fill="url(#saGrad)" opacity="0.9" />
       <text x="60" y="90" textAnchor="middle" fill="#8B5CF6" fontSize="7" fontFamily="monospace">
-        ASSOCIATE
+        {label}
       </text>
     </svg>
   );
 }
 
-function GenAIPractitionerBadge() {
+function GenAIPractitionerBadge({ label }: { label: string }) {
   return (
     <svg viewBox="0 0 120 120" className="w-24 h-24" aria-hidden="true">
       <defs>
@@ -64,7 +64,7 @@ function GenAIPractitionerBadge() {
       <circle cx="45" cy="65" r="2" fill="url(#aiGrad)" opacity="0.5" />
       <circle cx="75" cy="65" r="2" fill="url(#aiGrad)" opacity="0.5" />
       <text x="60" y="90" textAnchor="middle" fill="#06B6D4" fontSize="7" fontFamily="monospace">
-        FOUNDATIONAL
+        {label}
       </text>
     </svg>
   );
@@ -72,17 +72,27 @@ function GenAIPractitionerBadge() {
 
 const certs = [
   {
-    name: "AWS Certified Cloud Practitioner",
-    shortName: "Cloud Practitioner",
-    level: "Foundational",
-    year: "2025",
-    color: "#2D9CDB",
-    badge: CloudPractitionerBadge,
+    name: "AWS Certified Generative AI Developer - Professional",
+    shortName: "Generative AI Developer",
+    level: "Professional",
+    year: "2026",
+    color: "#06B6D4",
+    badge: GenAIPractitionerBadge,
     description:
-      "Validates overall understanding of AWS Cloud, including services, security, architecture, pricing, and support.",
+      "Validates building, deploying and operating generative AI applications on AWS, including foundation models, RAG and agents.",
   },
   {
-    name: "AWS Certified Solutions Architect Associate",
+    name: "AWS Certified Machine Learning Engineer - Associate",
+    shortName: "ML Engineer",
+    level: "Associate",
+    year: "2026",
+    color: "#8B5CF6",
+    badge: SolutionsArchitectBadge,
+    description:
+      "Validates preparing data, training, deploying and monitoring machine learning models on AWS.",
+  },
+  {
+    name: "AWS Certified Solutions Architect - Associate",
     shortName: "Solutions Architect",
     level: "Associate",
     year: "2025",
@@ -93,13 +103,23 @@ const certs = [
   },
   {
     name: "AWS Certified AI Practitioner",
-    shortName: "Gen AI Practitioner",
+    shortName: "AI Practitioner",
     level: "Foundational",
-    year: "2025",
+    year: "2026",
     color: "#06B6D4",
     badge: GenAIPractitionerBadge,
     description:
       "Validates understanding of generative AI concepts, foundation models, and responsible AI practices on AWS.",
+  },
+  {
+    name: "AWS Certified Cloud Practitioner",
+    shortName: "Cloud Practitioner",
+    level: "Foundational",
+    year: "2025",
+    color: "#2D9CDB",
+    badge: CloudPractitionerBadge,
+    description:
+      "Validates overall understanding of AWS Cloud, including services, security, architecture, pricing, and support.",
   },
 ];
 
@@ -126,7 +146,7 @@ export default function Certifications() {
                   className="absolute inset-0 rounded-xl border border-slate-800 bg-[#0a0e1a] p-6 flex flex-col items-center justify-center gap-4 backface-hidden group-hover:rotate-y-180 transition-transform duration-700"
                   style={{ backfaceVisibility: "hidden" }}
                 >
-                  <cert.badge />
+                  <cert.badge label={cert.level.toUpperCase()} />
                   <div className="text-center">
                     <p
                       className="text-sm font-semibold"

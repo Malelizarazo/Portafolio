@@ -1,28 +1,39 @@
 const skillGroups = [
   {
     category: "Programming",
-    skills: ["Python", "Java", "JavaScript", "HTML", "SQL", "React", "Dart"],
+    skills: ["Python", "Java", "JavaScript", "TypeScript", "SQL", "React", "Dart"],
   },
   {
-    category: "Data & ML",
+    category: "AI & ML",
     skills: [
+      "LLMs",
+      "RAG",
+      "Multi-agent orchestration",
+      "Amazon Bedrock AgentCore",
+      "Strands Agents",
+      "LangGraph",
+      "PyTorch",
+      "Scikit-learn",
       "Pandas",
       "NumPy",
-      "Scikit-learn",
-      "PCA",
-      "Clustering",
-      "Predictive Modeling",
-      "Power BI",
-      "QuickSight",
     ],
   },
   {
-    category: "Cloud & DevOps",
-    skills: ["AWS", "Azure ML", "Google Cloud", "Docker", "BigQuery"],
+    category: "Cloud & Operations",
+    skills: [
+      "AWS",
+      "Azure ML",
+      "Docker",
+      "Kubernetes",
+      "OpenShift",
+      "Linux",
+      "Grafana",
+      "Prometheus",
+    ],
   },
   {
-    category: "Tools & Automation",
-    skills: ["Salesforce", "Power Automate", "Git", "Jupyter", "Flutter"],
+    category: "Tools",
+    skills: ["Git", "CI/CD", "Jupyter", "Flutter", "Power BI", "Power Automate"],
   },
 ];
 
